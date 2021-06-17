@@ -34,7 +34,7 @@ public class OauthTest {
 		
 	//Get access code	
 		
-	String url = "https://rahulshettyacademy.com/getCourse.php?code=4%2F0AY0e-g6RYOIVF-oRr7XLdsDdhy7nxCE3rWr3s80qfBHdnbADC1nPchKVnVQT8qbrKBGEaQ&scope=email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=none";
+	String url = "https://rahulshettyacademy.com/getCourse.php?code=4%2F0AY0e-g68p9_O-sh1a_x89e1-SfMMXWApLiE3pLlrm4jVOcCKci_w38Ns6ceCK_VwXLP9YQ&scope=email+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&prompt=none";
 	
 	String partialsplit=url.split("code=")[1];
 	String code = partialsplit.split("&scope")[0];	
@@ -75,21 +75,6 @@ public class OauthTest {
 	System.out.println(cd.getInstructor());
 	//System.out.println(cd.getUrl());
 	//System.out.println(cd.getCourses());
-	
-	
-	
-
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		
 		
 		
