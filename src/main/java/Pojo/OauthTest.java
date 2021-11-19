@@ -63,9 +63,13 @@ public class OauthTest {
 	 * asString();
 	 */
 	
-	
+
+		//We are getting response and converting to Java object here
+		//All the values of variables will fall in their respective variables to access
+		//This is conversion of response to Java Object (Deserialisation)
+		//getters come in to picture for deserialisation
 	  CoursesDetails cd =
-	  given().queryParam("access_token",accessToken).expect().defaultParser(Parser.JSON) 
+	  given().queryParam("access_token",accessToken).expect().defaultParser(Parser.JSON)
 	  .when()
 	  .get("https://rahulshettyacademy.com/getCourse.php").as(CoursesDetails.class);
 	 
